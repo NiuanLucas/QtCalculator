@@ -1,0 +1,7 @@
+QLineEdit#numericField {
+    background: white;
+    border: 2px solid #C0C0C0;
+    border-radius: 6px;
+    padding: 4px;
+}
+QLineEdit#numericField:focus { border-color: #4A90E2; }
