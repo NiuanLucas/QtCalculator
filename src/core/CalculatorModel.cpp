@@ -5,7 +5,7 @@ CalculatorModel::CalculatorModel(QObject *parent)
 {
 }
 
-double CalculatorModel::sum(double a, double b) const
+double CalculatorModel::sum(double a, double b)
 {
     const double result = a + b;
     emit resultReady(result);          // Caso alguém se conecte
