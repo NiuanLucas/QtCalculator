@@ -2,7 +2,7 @@
 #include <QObject>
 
 /**
- * @brief Modelo simples de calculadora – por enquanto só soma.
+ * @brief Modelo simples de calculadora.
  *        Nenhuma dependência de UI (Widgets).
  */
 class CalculatorModel : public QObject
@@ -11,8 +11,11 @@ class CalculatorModel : public QObject
 public:
     explicit CalculatorModel(QObject *parent = nullptr);
 
-    // Método síncrono: retorna o resultado na hora
+    // Métodos síncronos: retornam o resultado na hora
     double sum(double a, double b);
+    double subtract(double a, double b);
+    double multiply(double a, double b);
+    double divide(double a, double b);
 
 signals:
     // Exemplo de notificação assíncrona, caso queira usar

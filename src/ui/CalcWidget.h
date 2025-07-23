@@ -13,7 +13,10 @@ public:
     explicit CalcWidget(CalculatorModel *model, QWidget *parent = nullptr);
 
 private slots:
-    void onSumClicked();
+    void onAddClicked();
+    void onSubtractClicked();
+    void onMultiplyClicked();
+    void onDivideClicked();
 
 private:
     QLineEdit       *editA{nullptr};

@@ -13,6 +13,6 @@ MainWindow::MainWindow(QWidget *parent)
     setCentralWidget(calc);
 
     // metadados da janela
-    setWindowTitle("Calculadora Qt – Soma");
+    setWindowTitle("Calculadora Qt – Aritmética");
     resize(360, 260);
 }
