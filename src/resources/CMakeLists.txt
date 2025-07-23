@@ -1,6 +1,4 @@
 # src/resources/CMakeLists.txt
-qt_add_resources(styles_qrc
-    PREFIX /
-    FILES
-        styles.qrc          # o próprio .qrc; Qt varre e gera cpp
-)
+
+# The application directly embeds styles.qrc via src/app/CMakeLists.txt, so
+# no additional resource target is needed here.

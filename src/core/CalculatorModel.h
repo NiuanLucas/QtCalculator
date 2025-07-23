@@ -12,7 +12,7 @@ public:
     explicit CalculatorModel(QObject *parent = nullptr);
 
     // Método síncrono: retorna o resultado na hora
-    double sum(double a, double b) const;
+    double sum(double a, double b);
 
 signals:
     // Exemplo de notificação assíncrona, caso queira usar
