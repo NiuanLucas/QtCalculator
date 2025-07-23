@@ -2,8 +2,6 @@
 #include "../ui/MainWindow.h"      // caminho relativo porque UI é outro subdir
 
 #include <QApplication>
-#include <QLocale>
-#include <QTranslator>
 
 int main(int argc, char *argv[])
 {
@@ -15,17 +13,8 @@ int main(int argc, char *argv[])
     StyleHelper::apply();          // lê todos os .qss embutidos no .qrc
 
     //------------------------------------------------------------------
-    // 2. Carregar tradução, se existir
+    // 2. Traducao (nao utilizado neste projeto)
     //------------------------------------------------------------------
-    QTranslator translator;
-    const QStringList uiLanguages = QLocale::system().uiLanguages();
-    for (const QString &locale : uiLanguages) {
-        const QString baseName = "Test_Niuan_" + QLocale(locale).name();
-        if (translator.load(":/i18n/" + baseName)) {
-            app.installTranslator(&translator);
-            break;
-        }
-    }
 
     //------------------------------------------------------------------
     // 3. Criar e exibir a janela principal
