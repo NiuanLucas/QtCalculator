@@ -1,0 +1,8 @@
+/* Paleta clara */
+QWidget {
+    background: #F0F0F0;
+    color: #202020;
+    font-family: "Arial";
+    font-size: 14pt;
+    font-weight: bold;
+}
