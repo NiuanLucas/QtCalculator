@@ -17,17 +17,17 @@ QString loadQss(const char *rcPath)
 QPalette buildDarkPalette()
 {
     QPalette pal;
-    pal.setColor(QPalette::Window,      QColor("#2F2F37"));
-    pal.setColor(QPalette::WindowText,  Qt::white);
-    pal.setColor(QPalette::Base,        QColor("#202027"));
-    pal.setColor(QPalette::AlternateBase,QColor("#2F2F37"));
-    pal.setColor(QPalette::ToolTipBase, Qt::white);
-    pal.setColor(QPalette::ToolTipText, Qt::white);
-    pal.setColor(QPalette::Text,        Qt::white);
-    pal.setColor(QPalette::Button,      QColor("#3A3A42"));
-    pal.setColor(QPalette::ButtonText,  Qt::white);
-    pal.setColor(QPalette::BrightText,  Qt::red);
-    pal.setColor(QPalette::Highlight,   QColor("#4A90E2"));
+    pal.setColor(QPalette::Window,       QColor("#001f3f"));
+    pal.setColor(QPalette::WindowText,   Qt::white);
+    pal.setColor(QPalette::Base,         QColor("#001f3f"));
+    pal.setColor(QPalette::AlternateBase,QColor("#00214e"));
+    pal.setColor(QPalette::ToolTipBase,  Qt::white);
+    pal.setColor(QPalette::ToolTipText,  Qt::white);
+    pal.setColor(QPalette::Text,         Qt::white);
+    pal.setColor(QPalette::Button,       QColor("#003366"));
+    pal.setColor(QPalette::ButtonText,   Qt::white);
+    pal.setColor(QPalette::BrightText,   Qt::red);
+    pal.setColor(QPalette::Highlight,    QColor("#4A90E2"));
     pal.setColor(QPalette::HighlightedText, Qt::black);
     return pal;
 }
