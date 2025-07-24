@@ -10,7 +10,8 @@ int main(int argc, char *argv[])
     //------------------------------------------------------------------
     // 1. Estilo global (cores, fontes, bordas) carregado via StyleHelper
     //------------------------------------------------------------------
-    StyleHelper::apply();          // lê todos os .qss embutidos no .qrc
+    StyleHelper::Mode mode = StyleHelper::initialMode();
+    StyleHelper::apply(mode);      // lê todos os .qss embutidos no .qrc
 
     //------------------------------------------------------------------
     // 2. Traducao (nao utilizado neste projeto)
@@ -19,7 +20,7 @@ int main(int argc, char *argv[])
     //------------------------------------------------------------------
     // 3. Criar e exibir a janela principal
     //------------------------------------------------------------------
-    MainWindow window;
+    MainWindow window(mode);
     window.show();
 
     return app.exec();             // loop de eventos

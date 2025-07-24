@@ -1,6 +1,7 @@
 <RCC>
   <qresource prefix="/styles">
     <file>styles/core.qss</file>
+    <file>styles/core_light.qss</file>
     <file>styles/buttons.qss</file>
     <file>styles/inputs.qss</file>
   </qresource>
